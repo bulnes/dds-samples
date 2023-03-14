@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDS Sample</title>
+
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.24.0/css/dds-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.24.0/css/dds-fonts.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.24.0/css/dds-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.24.0/css/dds-helpers.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.24.0/css/dds-main.min.css"
+    />
+  </head>
+  <body>
+    <div class="dds__container">
+      <div class="dds__row">
+        <div class="dds__col--md-6">
+          <!-- datepicker component -->
+          <div class="dds__date-picker" data-dds="date-picker" id="unique-id">
+            <label
+              id="date-picker-label-988019316"
+              for="date-picker-control-name-988019316"
+              class="dds__label dds__label--required"
+            >
+              Date picker
+            </label>
+            <div class="dds__date-picker__wrapper">
+              <input
+                type="text"
+                class="dds__date-picker__input"
+                placeholder="Enter the date"
+                required=""
+                maxlength="256"
+                id="date-picker-control-988019316"
+                name="date-picker-control-name-988019316"
+                aria-labelledby="date-picker-label-988019316 date-picker-helper-988019316"
+              />
+              <small
+                id="date-picker-helper-988019316"
+                class="dds__date-picker__helper"
+                >Please, use the format MM/DD/YYYY</small
+              >
+              <div
+                id="date-picker-error-988019316"
+                class="dds__date-picker__invalid-feedback"
+              >
+                undefined
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://dds.dell.com/components/2.24.0/js/index.min.js"></script>
+    <script>
+      const element = document.getElementById("unique-id");
+      DDS.DatePicker(element, { format: "DD/MM/YYYY" });
+    </script>
+  </body>
+</html>
